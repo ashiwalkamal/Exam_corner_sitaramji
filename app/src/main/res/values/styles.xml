@@ -1,0 +1,149 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppThemeone" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="Textview" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts</item>
+
+    </style>
+
+    <style name="welcome" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorgray</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts</item>
+
+    </style>
+
+
+
+    <style name="btntext" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="btnlog" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
+    <style name="title" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="descp" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorgray</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+
+    </style>
+
+
+    <style name="lets" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts1</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="edttext" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:hint">@string/email</item>
+
+    </style>
+
+    <style name="edttext1" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:hint">@string/password</item>
+
+    </style>
+
+    <style name="edttext2" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+        <item name="android:hint">@string/name</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="general" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="edttext3" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+        <item name="android:hint">@string/uname</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+
+    </style>
+    <style name="edttext4" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+        <item name="android:hint">@string/phone</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="big" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/texts2</item>
+        <item name="android:hint">@string/big</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+
+    </style>
+
+
+
+    <string name="email">E-mail</string>
+    <string name="password">password</string>
+    <string name="name">Name</string>
+    <string name="uname">Username</string>
+    <string name="phone">Phone Number</string>
+    <string name="big">Write about the problem</string>
+</resources>

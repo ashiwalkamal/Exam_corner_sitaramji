@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:text="@string/back"
+        android:drawableLeft="@drawable/ic_keyboard_arrow_left"
+        android:layout_margin="@dimen/margin1"
+        android:theme="@style/welcome"
+        android:padding="@dimen/padding1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/img"/>
+
+    <TextView
+        android:id="@+id/lets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin2"
+        android:text="@string/lets"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="169dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        android:theme="@style/lets"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="169dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/lets"
+        android:theme="@style/edttext"
+        android:background="@drawable/edtback"
+        android:padding="@dimen/padding2"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="169dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:theme="@style/edttext1"
+        android:background="@drawable/edtback"
+        android:padding="@dimen/padding2"
+        android:inputType="textPassword"
+        android:hint="@string/password"/>
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin2"
+        android:text="@string/forgot"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="169dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:theme="@style/welcome"/>
+
+
+    <TextView
+        android:id="@+id/logins"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnlog"
+        android:padding="@dimen/padding"
+        android:text="@string/login"
+        android:theme="@style/btnlog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot"
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/facing"
+        style="@style/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logins"
+        app:layout_constraintVertical_bias="0.103"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

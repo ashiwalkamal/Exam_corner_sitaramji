@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Help"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+
+        <TextView
+            android:id="@+id/help1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:text="@string/Helps"
+            android:theme="@style/lets"
+            />
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="169dp"
+            android:theme="@style/edttext2"
+            android:background="@drawable/edtback"
+            android:padding="@dimen/padding2"
+            android:inputType="text"/>
+
+
+        <EditText
+            android:id="@+id/emails"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="169dp"
+            android:theme="@style/edttext"
+            android:background="@drawable/edtback"
+            android:padding="@dimen/padding2"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="169dp"
+            android:theme="@style/edttext4"
+            android:background="@drawable/edtback"
+            android:padding="@dimen/padding2"
+            android:inputType="number"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin2"
+            android:background="@drawable/edtback">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/issue"
+                />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="169dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/lets"
+            android:theme="@style/big"
+            android:background="@drawable/edtback"
+            android:padding="@dimen/padding2"
+            android:inputType="text"
+            android:hint="@string/uname"
+            android:gravity="start|top"/>
+
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin2"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnlog"
+            android:padding="@dimen/padding"
+            android:text="@string/submits"
+            android:theme="@style/btnlog"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp"
+            android:textAllCaps="true"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</layout>

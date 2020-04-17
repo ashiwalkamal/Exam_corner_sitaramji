@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/downloads"
+        android:title="@string/download"
+        android:icon="@drawable/downloads">
+    </item>
+    <item
+        android:id="@+id/mypurchaqse"
+        android:title="@string/mypurchaqse"
+        android:icon="@drawable/ic_cart"
+        >
+    </item>
+    <item
+        android:id="@+id/timetable"
+        android:title="@string/timetable"
+        android:icon="@drawable/ic_timetable"
+        >
+    </item>
+
+
+    <item
+        android:id="@+id/setting"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_gear"
+        >
+    </item>
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share"
+        >
+    </item>
+
+    <item
+        android:id="@+id/rate"
+        android:title="@string/rate"
+        android:icon="@drawable/ic_star"
+        >
+    </item>
+    <item
+        android:id="@+id/Help"
+        android:title="@string/Help"
+        android:icon="@drawable/help"
+        >
+    </item>
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_logout"
+        >
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PaidCourse"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/backintent"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="@dimen/padding1"
+            android:layout_gravity="start|center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:text="@string/app_name"
+            android:layout_margin="@dimen/margin1"
+            android:theme="@style/title"
+            android:padding="@dimen/padding1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:ignore="MissingConstraints"
+        android:visibility="gone">
+        <include
+            layout="@layout/app_bar1"
+            android:visibility="gone"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/colorblack"
+        android:background="@color/colorWhite"
+        app:tabMode="fixed"
+        android:id="@+id/cources"
+        app:tabIndicatorHeight="2dp"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="@dimen/margin1"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coursepager"/>
+
+
+
+
+
+
+</LinearLayout>
+</layout>
